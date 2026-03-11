@@ -18,35 +18,125 @@
     },
     "character": {
       "templates": ["base"],
-      "attributes": {
-        "level": {
-          "value": 1
+      "profile": {
+        "titleOrHonorific": "",
+        "sort": "",
+        "pronouns": "",
+        "size": "",
+        "age": "",
+        "bestTimeOfDay": "",
+        "sociability": ""
+      },
+      "stats": {
+        "charm": {
+          "sort": 0,
+          "peculiarity": 0,
+          "elective": 0,
+          "final": 0
+        },
+        "intrepidity": {
+          "sort": 0,
+          "peculiarity": 0,
+          "elective": 0,
+          "final": 0
+        },
+        "pother": {
+          "sort": 0,
+          "peculiarity": 0,
+          "elective": 0,
+          "final": 0
+        },
+        "sense": {
+          "sort": 0,
+          "peculiarity": 0,
+          "elective": 0,
+          "final": 0
         }
       },
-      "abilities": {
-        "str": {
-          "value": 10
-        },
-        "dex": {
-          "value": 10
-        },
-        "con": {
-          "value": 10
-        },
-        "int": {
-          "value": 10
-        },
-        "wis": {
-          "value": 10
-        },
-        "cha": {
-          "value": 10
+      "animalityPoetryRange": 0,
+      "innatePeculiarities": "",
+      "personalPeculiarities": {
+        "1": "",
+        "2": "",
+        "3": ""
+      },
+      "knacks": {
+        "usedThisCycle": "",
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false
+      },
+      "insufficiency": "",
+      "appallingRelative": {
+        "name": "",
+        "titleOrHonorific": "",
+        "sort": "",
+        "pronouns": "",
+        "age": "",
+        "relationship": "",
+        "whichSide": "",
+        "particulars": {
+          "1": "",
+          "2": "",
+          "3": ""
         }
-      }
+      },
+      "greatestWeapon": "",
+      "dragYou": "",
+      "homeDescription": "",
+      "petsCommunityInterests": "",
+      "home": {
+        "name": "",
+        "type": "",
+        "size": "",
+        "location": "",
+        "housemates": "",
+        "heart": "",
+        "description": ""
+      },
+      "pet": {
+        "hasPet": false,
+        "name": "",
+        "species": "",
+        "notes": ""
+      },
+      "vehicle": {
+        "hasVehicle": false,
+        "types": {
+          "bicycle": false,
+          "motorcycle": false,
+          "rowingBoat": false,
+          "sailboat": false,
+          "other": false,
+          "otherText": ""
+        },
+        "details": ""
+      },
+      "souvenirs": {
+        "display": "",
+        "items": "",
+        "tokens": ""
+      },
+      "seasonalReckoning": "",
+      "otherNotes": "",
+      "otherFamilyAndFriends": "",
+      "temporaryModifiers": ""
     },
     "npc": {
       "templates": ["base"],
-      "cr": 0
+      "npcCategory": "",
+      "cr": 0,
+      "description": "",
+      "role": "",
+      "foeLevel": "",
+      "attitude": "",
+      "homeLife": "",
+      "attitudeTowardAnimals": "",
+      "size": "",
+      "variety": "",
+      "particulars": "",
+      "notes": ""
     }
   },
   "Item": {
@@ -60,10 +150,32 @@
       "templates": ["base"],
       "quantity": 1,
       "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      "formula": "d20"
     },
     "feature": {
-      "templates": ["base"]
+      "templates": ["base"],
+      "category": "",
+      "sort": "",
+      "peculiarityType": "",
+      "usedThisCycle": false,
+      "bonuses": [],
+      "choiceBonuses": [],
+      "selectedChoices": [],
+      "otherEffects": "",
+      "tokenCost": 0,
+      "size": "",
+      "timeOfDay": "",
+      "sociability": "",
+      "preliminaryStats": {
+        "charm": 0,
+        "intrepidity": 0,
+        "pother": 0,
+        "sense": 0
+      },
+      "innatePeculiarities": "",
+      "riverbankSortDescription": "",
+      "ordinarySortDescription": "",
+      "notes": ""
     },
     "spell": {
       "templates": ["base"],

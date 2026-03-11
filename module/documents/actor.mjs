@@ -29,8 +29,6 @@ export class BoilerplateActor extends Actor {
    */
   prepareDerivedData() {
     const actorData = this;
-    const systemData = actorData.system;
-    const flags = actorData.flags.boilerplate || {};
 
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.
@@ -44,13 +42,23 @@ export class BoilerplateActor extends Actor {
   _prepareCharacterData(actorData) {
     if (actorData.type !== 'character') return;
 
-    // Make modifications to data here. For example:
     const systemData = actorData.system;
+    const stats = systemData.stats ?? {};
+    const statKeys = ['charm', 'intrepidity', 'pother', 'sense'];
 
-    // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(systemData.abilities)) {
-      // Calculate the modifier using d20 rules.
-      ability.mod = Math.floor((ability.value - 10) / 2);
+    systemData.animalityPoetryRange = Number(systemData.animalityPoetryRange) || 0;
+    systemData.animalityPoetryRange = Math.max(-8, Math.min(8, systemData.animalityPoetryRange));
+
+    for (const key of statKeys) {
+      const stat = stats[key];
+      if (!stat) continue;
+
+      stat.sort = Number(stat.sort) || 0;
+      stat.peculiarity = Number(stat.peculiarity) || 0;
+      stat.elective = Number(stat.elective) || 0;
+      stat.computed = stat.sort + stat.peculiarity + stat.elective;
+      stat.final = stat.computed;
+      stat.delta = 0;
     }
   }
 
@@ -85,17 +93,38 @@ export class BoilerplateActor extends Actor {
   _getCharacterRollData(data) {
     if (this.type !== 'character') return;
 
-    // Copy the ability scores to the top level, so that rolls can use
-    // formulas like `@str.mod + 4`.
-    if (data.abilities) {
-      for (let [k, v] of Object.entries(data.abilities)) {
+    // Expose each stat at top-level for compact formulas like @charm.final.
+    if (data.stats) {
+      for (let [k, v] of Object.entries(data.stats)) {
         data[k] = foundry.utils.deepClone(v);
       }
     }
 
-    // Add level for easier access, or fall back to 0.
-    if (data.attributes.level) {
-      data.lvl = data.attributes.level.value ?? 0;
+    this._applyAnimalityPoetryRollPenalties(data);
+  }
+
+  /**
+   * Apply Animality/Poetry milestone penalties to roll-only data.
+   * ±6: -1 Charm, ±4: -1 Sense.
+   * @param {object} data
+   * @private
+   */
+  _applyAnimalityPoetryRollPenalties(data) {
+    const range = Math.abs(Number(this.system?.animalityPoetryRange) || 0);
+    const sensePenalty = range >= 4 ? 1 : 0;
+    const charmPenalty = range >= 6 ? 1 : 0;
+
+    if (data.stats?.sense) {
+      data.stats.sense.final = (Number(data.stats.sense.final) || 0) - sensePenalty;
+    }
+    if (data.stats?.charm) {
+      data.stats.charm.final = (Number(data.stats.charm.final) || 0) - charmPenalty;
+    }
+    if (data.sense) {
+      data.sense.final = (Number(data.sense.final) || 0) - sensePenalty;
+    }
+    if (data.charm) {
+      data.charm.final = (Number(data.charm.final) || 0) - charmPenalty;
     }
   }
 

@@ -1,0 +1,922 @@
+{
+  "name": "Wim Wallpaper Wassleford",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "health": {
+      "value": 10,
+      "max": 10
+    },
+    "power": {
+      "value": 5,
+      "max": 5
+    },
+    "biography": "",
+    "profile": {
+      "titleOrHonorific": "Mr.",
+      "sort": "Lizard",
+      "pronouns": "he/him",
+      "size": "Small",
+      "age": "adult",
+      "bestTimeOfDay": "Diurnal",
+      "sociability": "Solitary"
+    },
+    "stats": {
+      "charm": {
+        "sort": 3,
+        "peculiarity": 2,
+        "elective": 0,
+        "final": 5,
+        "computed": 5,
+        "delta": 0
+      },
+      "intrepidity": {
+        "sort": 2,
+        "peculiarity": 1,
+        "elective": 0,
+        "final": 3,
+        "computed": 4,
+        "delta": 0
+      },
+      "pother": {
+        "sort": 6,
+        "peculiarity": 1,
+        "elective": 0,
+        "final": 7,
+        "computed": 7,
+        "delta": 0
+      },
+      "sense": {
+        "sort": 4,
+        "peculiarity": -1,
+        "elective": 4,
+        "final": 7,
+        "computed": 7,
+        "delta": 0
+      }
+    },
+    "animalityPoetryRange": 0,
+    "innatePeculiarities": "",
+    "personalPeculiarities": {
+      "1": "",
+      "2": "",
+      "3": ""
+    },
+    "knacks": {
+      "1": false,
+      "2": false,
+      "3": false,
+      "4": false,
+      "usedThisCycle": ""
+    },
+    "insufficiency": "",
+    "appallingRelative": {
+      "name": "Ezra-Nehemiah Ogle",
+      "titleOrHonorific": "Mr.",
+      "sort": "Lizard",
+      "pronouns": "he/him",
+      "age": "elderly",
+      "relationship": "very old uncle",
+      "whichSide": "mother's side",
+      "particulars": {
+        "1": "At death's door, or so they claim",
+        "2": "Batty",
+        "3": "Quarrelsome"
+      }
+    },
+    "greatestWeapon": "Threatens to come and stay. Sometimes they do. Also, Wim is dependent on Uncle Ogle, so he might cut off Wim's allowance.",
+    "dragYou": "Their bedside. They are sure they are dying, and you must come to them At Once to hear their lingering last words. This may be a sincere request, but it's far more likely to be a cunning ruse.",
+    "homeDescription": "Uncle Ogle lives in the mostly Human spa town of Bath, where he has a nice rowhouse, but he only uses two rooms on the main floor.",
+    "petsCommunityInterests": "Uncle Ogle is an ancient and very warty-looking lizard. He likes to peel out of all of his clothes and wander the public gardens making noises he says are lizard language. If he were a character, he'd be approaching Absolute Animality. He argues about everything.",
+    "home": {
+      "name": "Ye Nook",
+      "type": "upstairs flat from a ground-story shopfront",
+      "size": "four rooms",
+      "location": "just east of the Chestnut",
+      "housemates": "none",
+      "heart": "His comfy leather chair, ottoman, and table in front of the fireplace in the parlor.",
+      "description": "Two-storied house with a ground-story shopfront. Georgian structure of stone, even the gabled roofs. The shopfront has been expanded with a huge bay window. A row of ornamental hedges extends for some yards to either side of the shop, sheltering the impressive herb garden laid out according to Italian principles. Upstairs is a comfortable, small flat decorated with the rich colors and flowing lines of Art Nouveau."
+    },
+    "pet": {
+      "hasPet": true,
+      "name": "Jam-Jar",
+      "species": "Cockchafer Beetle",
+      "notes": "3-4 inches long. A chunky and clumsy, but pleasant-looking beetle with fanlike antennae, chestnut-brown wing covers, and a black body. Flying. All beetles can fly.\n\nBuzz. Whenever the GM thinks something has risen to the level of bothering a cockchafer, roll 1d6; on a 1-2, the beetle begins emitting a deafening buzz and does not stop until it is placated or removed from the area."
+    },
+    "vehicle": {
+      "hasVehicle": true,
+      "types": {
+        "bicycle": false,
+        "motorcycle": false,
+        "rowingBoat": false,
+        "sailboat": false,
+        "other": true,
+        "otherText": "other"
+      },
+      "details": "Details"
+    },
+    "souvenirs": {
+      "display": "In a neat row on the wardrobe in the bedroom.",
+      "items": "",
+      "tokens": ""
+    },
+    "seasonalReckoning": "Personal goals, practical goals, and timeframes.",
+    "otherNotes": "Debonair and elegant, Wim is a very attractive common Lizard with brown, tan, and cream speckles and stripes. He's a little dressier than most in the area because of his Town connections. He prefers proper tweed suits that bring out his shiny black eyes. He collects old china. Clothing, hobbies, objects of desire, contents of your pockets, etc.",
+    "otherFamilyAndFriends": "Wim loves Town and has many friends there, some of whom come for visits when they need to get away from the bustle of the big city. He is a member of the Junior Bluebottle, a private club in Town, and often wears their special club waistcoat.",
+    "temporaryModifiers": "Ongoing side effects, Sense and Charm A/P adjustments etc."
+  },
+  "prototypeToken": {
+    "name": "Wim Wallpaper Wassleford",
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "health"
+    },
+    "bar2": {
+      "attribute": "power"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Winter Torpor",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "Lizards do not hibernate like their ordinary cousins, but they remain prone to sluggishness in the winter months, especially outdoors and when not properly dressed. They receive a -1 penalty to wintertime deeds performed outside a heated environment.",
+        "category": "innate",
+        "sort": "Lizard",
+        "peculiarityType": "innate",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "effects": [],
+      "sort": 5800000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773218937154,
+        "modifiedTime": 1773218937154,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "_id": "zCMQW6JnB1MJXGrH",
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Climbing",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "Lizards receive a +1 bonus for deeds involving climbing or scrambling, usually deeds of Valor or Discretion. They take no Animality points from heights.",
+        "category": "innate",
+        "sort": "Lizard",
+        "peculiarityType": "innate",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "effects": [],
+      "sort": 5600000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773218937154,
+        "modifiedTime": 1773218937154,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "_id": "Yt9VONTxZ53FuvzL",
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Detachable Tail",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "A Lizard's tail or other limb can break off and grow back, useful if you are being pursued or if you need a distraction. The limb grows back after two weeks.",
+        "category": "innate",
+        "sort": "Lizard",
+        "peculiarityType": "innate",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "effects": [],
+      "sort": 5700000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773218937154,
+        "modifiedTime": 1773218937154,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "_id": "pNoLz7026JgIDsQD",
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Has a Pet (+1 to Charm)",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "+1 bonus to Charm: Whether it is true or not, you assume having a pet makes you more interesting to others, and that gloss of happy satisfaction is clear.",
+        "category": "personal",
+        "sort": "",
+        "peculiarityType": "personal",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [
+          {
+            "prompt": "Choose one bonus.",
+            "options": [
+              {
+                "label": "+1 bonus to Charm",
+                "description": "Whether it is true or not, you assume having a pet makes you more interesting to others, and that gloss of happy satisfaction is clear.",
+                "bonuses": [
+                  {
+                    "stat": "charm",
+                    "value": 1,
+                    "description": "Whether it is true or not, you assume having a pet makes you more interesting to others, and that gloss of happy satisfaction is clear."
+                  }
+                ]
+              },
+              {
+                "label": "+1 bonus to Pother",
+                "description": "Pets are little chaos engines, always escaping, needing things at the worst possible time, and piddling on the carpets of important people.",
+                "bonuses": [
+                  {
+                    "stat": "pother",
+                    "value": 1,
+                    "description": "Pets are little chaos engines, always escaping, needing things at the worst possible time, and piddling on the carpets of important people."
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectedChoices": [
+          "+1 bonus to Charm"
+        ],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "folder": "cJkqVTfWtPpKRc57",
+      "_id": "dTmh6CMWQTYHPLeU",
+      "effects": [],
+      "sort": 800000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.peculiarities.Item.WPxRpx3mqkILQ4YD",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773219015503,
+        "modifiedTime": 1773219020224,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Has Enthusiasms (+1 to Intrepidity, +1 to Pother, -1 to Sense)",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "+1 bonus to Intrepidity: You do almost anything to pursue your current fancy, which grants you a certain amount of gumption.\n\n+1 bonus to Pother: You do almost anything to pursue your current fancy, even if it is inconvenient to everyone around you.\n\n-1 bonus to Sense: You really will do almost anything to pursue your current fancy.",
+        "category": "personal",
+        "sort": "",
+        "peculiarityType": "personal",
+        "usedThisCycle": false,
+        "bonuses": [
+          {
+            "stat": "intrepidity",
+            "value": 1,
+            "description": "You do almost anything to pursue your current fancy, which grants you a certain amount of gumption."
+          },
+          {
+            "stat": "pother",
+            "value": 1,
+            "description": "You do almost anything to pursue your current fancy, even if it is inconvenient to everyone around you."
+          },
+          {
+            "stat": "sense",
+            "value": -1,
+            "description": "You really will do almost anything to pursue your current fancy."
+          }
+        ],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "folder": "cJkqVTfWtPpKRc57",
+      "_id": "H3yfAPaNqJV8VuNz",
+      "effects": [],
+      "sort": 900000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.peculiarities.Item.xCP4IccjO0H2tnCr",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773219036374,
+        "modifiedTime": 1773219036426,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Is Dependent (+1 to Charm)",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "+1 bonus to Charm: You have been buttering up cranky old relatives for ages now; meeting a stranger or chatting with a friend is kitten's play.",
+        "category": "personal",
+        "sort": "",
+        "peculiarityType": "personal",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [
+          {
+            "prompt": "Choose one bonus.",
+            "options": [
+              {
+                "label": "+1 bonus to Charm",
+                "description": "You have been buttering up cranky old relatives for ages now; meeting a stranger or chatting with a friend is kitten's play.",
+                "bonuses": [
+                  {
+                    "stat": "charm",
+                    "value": 1,
+                    "description": "You have been buttering up cranky old relatives for ages now; meeting a stranger or chatting with a friend is kitten's play."
+                  }
+                ]
+              },
+              {
+                "label": "+1 bonus to Pother",
+                "description": "An Appalling Relative continually interferes with your life, and because of your circumstances, you have no choice but to respond to them.",
+                "bonuses": [
+                  {
+                    "stat": "pother",
+                    "value": 1,
+                    "description": "An Appalling Relative continually interferes with your life, and because of your circumstances, you have no choice but to respond to them."
+                  }
+                ]
+              },
+              {
+                "label": "+1 bonus to Sense",
+                "description": "An Appalling Relative is always jawing on about what you ought to do, so in self-defense you have become quite good at assessing the most sensible thing to do, before they weigh in.",
+                "bonuses": [
+                  {
+                    "stat": "sense",
+                    "value": 1,
+                    "description": "An Appalling Relative is always jawing on about what you ought to do, so in self-defense you have become quite good at assessing the most sensible thing to do, before they weigh in."
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectedChoices": [
+          "+1 bonus to Charm"
+        ],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "folder": "cJkqVTfWtPpKRc57",
+      "_id": "itaWYf9MPVzIxLb0",
+      "effects": [],
+      "sort": 1200000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.peculiarities.Item.7q24PgSJbMWBbxn6",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773219055525,
+        "modifiedTime": 1773219066151,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Blarney",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "You can alter a foe from commonplace to negligible, or from tiresome to commonplace. This does not work on dire foes or Appalling Relatives.",
+        "category": "knack",
+        "sort": "",
+        "peculiarityType": "",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "_id": "HwzLdvjs4k1mxpdO",
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.knacks.Item.4vkabZZ99EpceAip",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773219091094,
+        "modifiedTime": 1773219091094,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Physical Culture",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "+1 bonus to deeds of Valor focusing on strength, such as using a Human hammer, carrying a heavy parcel, or lifting a large rock.",
+        "category": "knack",
+        "sort": "",
+        "peculiarityType": "",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "_id": "EUHpujarQPnV1J1v",
+      "effects": [],
+      "folder": null,
+      "sort": 3100000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.knacks.Item.P2ZSCGx9vtBQPVqH",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773219103614,
+        "modifiedTime": 1773219103614,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Sharp Eyes",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "+1 bonus to Attention deeds; +2 bonus to deeds involving finding pets.",
+        "category": "knack",
+        "sort": "",
+        "peculiarityType": "",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "_id": "6J4qcfdf0t8zjf4N",
+      "effects": [],
+      "folder": null,
+      "sort": 3500000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.knacks.Item.BemwBXjJKobM6aCh",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773219112331,
+        "modifiedTime": 1773219112331,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Useful",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "Useful. +1 to deeds that make things directly easier for others; unlocking a door for someone with their paws full, making tea for an aged relation, etc.",
+        "category": "knack",
+        "sort": "",
+        "peculiarityType": "",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "_id": "ValpcYiFoNfRe0x5",
+      "effects": [],
+      "folder": null,
+      "sort": 4300000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.knacks.Item.RtSiaqzmXTClbnc9",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773220068154,
+        "modifiedTime": 1773220068154,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Gawky",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "Whenever you enter a given interior space, such as a cottage, a shop, or a gardening shed, for the first time in a Haphazardry cycle, roll 1d6: On a 1, you fall down; on a 2, you merely stumble against something; results of 3-6 have no effect. This takes place every time you enter a new interior space each cycle.",
+        "category": "insufficiency",
+        "sort": "",
+        "peculiarityType": "",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": ""
+      },
+      "_id": "Z2e5pRz1zlO40lbb",
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.insufficiencies.Item.QhPUsPlWMzvihdA1",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773220081245,
+        "modifiedTime": 1773220081245,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Cockchafer",
+      "type": "feature",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "Body length three to four inches. This chunky and clumsy but pleasant-looking beetle has fanlike antennae, chestnut-brown wing covers, and a black body. The cockchafer is not for everyone, because when surprised or annoyed it makes an extremely loud buzzing sound. Compare to any medium-sized noisy mutt.",
+        "category": "pet",
+        "sort": "",
+        "peculiarityType": "",
+        "usedThisCycle": false,
+        "bonuses": [],
+        "choiceBonuses": [],
+        "selectedChoices": [],
+        "otherEffects": "",
+        "tokenCost": 0,
+        "size": "",
+        "timeOfDay": "",
+        "sociability": "",
+        "preliminaryStats": {
+          "charm": 0,
+          "intrepidity": 0,
+          "pother": 0,
+          "sense": 0
+        },
+        "innatePeculiarities": "",
+        "riverbankSortDescription": "",
+        "ordinarySortDescription": "",
+        "notes": "Buzz: Whenever the gamemaster thinks something has risen to the level of bothering a cockchafer, roll 1d6. On a 1-2, the cockchafer begins a deafening buzz and does not stop until someone placates it or removes it from the area.\nFlying: Beetles can fly."
+      },
+      "_id": "NotqVTr2NkOlfqES",
+      "effects": [],
+      "folder": "i7TfcFhPYENXg6De",
+      "sort": 100000,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Compendium.riverbank.pets.Item.9mGRFSAoCrvyfAa5",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "riverbank",
+        "systemVersion": "2.0.0",
+        "createdTime": 1773220107023,
+        "modifiedTime": 1773220107023,
+        "lastModifiedBy": "12YqS7XRYVOaTWj1"
+      },
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "riverbank",
+      "uuid": "Actor.qrPyitJVFUYhZdFe",
+      "coreVersion": "13.351",
+      "systemId": "riverbank",
+      "systemVersion": "2.0.0"
+    },
+    "coreVersion": "13.351",
+    "systemId": "riverbank",
+    "systemVersion": "2.0.0",
+    "createdTime": 1773218526643,
+    "modifiedTime": 1773219119448,
+    "lastModifiedBy": "12YqS7XRYVOaTWj1"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

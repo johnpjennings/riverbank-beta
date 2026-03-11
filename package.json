@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate",
+  "name": "riverbank",
   "version": "2.0.0",
-  "description": "CSS compiler for the Boilerplate system",
+  "description": "CSS compiler for the Riverbank system",
   "scripts": {
-    "build": "sass src/scss/boilerplate.scss css/boilerplate.css --style=expanded --no-source-map",
-    "watch": "sass src/scss/boilerplate.scss css/boilerplate.css --style=expanded --source-map --watch",
+    "build": "sass src/scss/riverbank.scss css/riverbank.css --style=expanded --no-source-map",
+    "watch": "sass src/scss/riverbank.scss css/riverbank.css --style=expanded --source-map --watch",
     "generate": "node src/generate-boilerplate-system.mjs"
   },
   "browserslist": [

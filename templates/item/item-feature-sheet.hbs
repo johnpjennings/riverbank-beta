@@ -24,12 +24,108 @@
 
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
-      {{!-- As you add new fields, add them in here! --}}
+      <div class="form-group">
+        <label>{{localize "RIVERBANK.Feature.Category"}}</label>
+        <select name="system.category">
+          <option value="">{{localize "RIVERBANK.Feature.Uncategorized"}}</option>
+          <option value="innate" {{#if (eq system.category "innate")}}selected{{/if}}>{{localize "RIVERBANK.Feature.CategoryInnate"}}</option>
+          <option value="personal" {{#if (eq system.category "personal")}}selected{{/if}}>{{localize "RIVERBANK.Feature.CategoryPersonal"}}</option>
+          <option value="knack" {{#if (eq system.category "knack")}}selected{{/if}}>{{localize "RIVERBANK.Feature.CategoryKnack"}}</option>
+          <option value="insufficiency" {{#if (eq system.category "insufficiency")}}selected{{/if}}>{{localize "RIVERBANK.Feature.CategoryInsufficiency"}}</option>
+          <option value="pet" {{#if (eq system.category "pet")}}selected{{/if}}>{{localize "RIVERBANK.Feature.CategoryPet"}}</option>
+          <option value="sort" {{#if (eq system.category "sort")}}selected{{/if}}>Sort</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Sort</label>
+        <input type="text" name="system.sort" value="{{system.sort}}" />
+      </div>
+      <div class="form-group">
+        <label>Peculiarity Type</label>
+        <select name="system.peculiarityType">
+          <option value=""></option>
+          <option value="innate" {{#if (eq system.peculiarityType "innate")}}selected{{/if}}>Innate</option>
+          <option value="personal" {{#if (eq system.peculiarityType "personal")}}selected{{/if}}>Personal</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>{{localize "RIVERBANK.Feature.UsedThisCycle"}}</label>
+        <input type="checkbox" name="system.usedThisCycle" {{checked system.usedThisCycle}} />
+      </div>
+      <div class="form-group">
+        <label>Token Cost</label>
+        <input type="number" name="system.tokenCost" value="{{system.tokenCost}}" min="0" />
+      </div>
+      <hr />
+      <div class="form-group">
+        <label>Size</label>
+        <select name="system.size">
+          <option value=""></option>
+          <option value="Diminutive" {{#if (eq system.size "Diminutive")}}selected{{/if}}>Diminutive</option>
+          <option value="Small" {{#if (eq system.size "Small")}}selected{{/if}}>Small</option>
+          <option value="Medium" {{#if (eq system.size "Medium")}}selected{{/if}}>Medium</option>
+          <option value="Large" {{#if (eq system.size "Large")}}selected{{/if}}>Large</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Time of Day</label>
+        <select name="system.timeOfDay">
+          <option value=""></option>
+          <option value="Diurnal" {{#if (eq system.timeOfDay "Diurnal")}}selected{{/if}}>Diurnal</option>
+          <option value="Nocturnal" {{#if (eq system.timeOfDay "Nocturnal")}}selected{{/if}}>Nocturnal</option>
+          <option value="Crepuscular" {{#if (eq system.timeOfDay "Crepuscular")}}selected{{/if}}>Crepuscular</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Sociability</label>
+        <select name="system.sociability">
+          <option value=""></option>
+          <option value="Solitary" {{#if (eq system.sociability "Solitary")}}selected{{/if}}>Solitary</option>
+          <option value="Small Group" {{#if (eq system.sociability "Small Group")}}selected{{/if}}>Small Group</option>
+          <option value="Colony or Flock" {{#if (eq system.sociability "Colony or Flock")}}selected{{/if}}>Colony or Flock</option>
+          <option value="Seasonal Flocking" {{#if (eq system.sociability "Seasonal Flocking")}}selected{{/if}}>Seasonal Flocking</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Preliminary Statistics</label>
+      </div>
+      <div class="form-group">
+        <label>Charm</label>
+        <input type="number" name="system.preliminaryStats.charm" value="{{system.preliminaryStats.charm}}" />
+      </div>
+      <div class="form-group">
+        <label>Intrepidity</label>
+        <input type="number" name="system.preliminaryStats.intrepidity" value="{{system.preliminaryStats.intrepidity}}" />
+      </div>
+      <div class="form-group">
+        <label>Pother</label>
+        <input type="number" name="system.preliminaryStats.pother" value="{{system.preliminaryStats.pother}}" />
+      </div>
+      <div class="form-group">
+        <label>Sense</label>
+        <input type="number" name="system.preliminaryStats.sense" value="{{system.preliminaryStats.sense}}" />
+      </div>
+      <div class="form-group stacked">
+        <label>Innate Peculiarities</label>
+        <textarea name="system.innatePeculiarities">{{system.innatePeculiarities}}</textarea>
+      </div>
+      <div class="form-group stacked">
+        <label>Riverbank {{item.name}}</label>
+        <textarea name="system.riverbankSortDescription">{{system.riverbankSortDescription}}</textarea>
+      </div>
+      <div class="form-group stacked">
+        <label>Ordinary {{item.name}}</label>
+        <textarea name="system.ordinarySortDescription">{{system.ordinarySortDescription}}</textarea>
+      </div>
+      <div class="form-group stacked">
+        <label>Notes</label>
+        <textarea name="system.notes">{{system.notes}}</textarea>
+      </div>
     </div>
 
     {{!-- Effects Tab --}}
     <div class="tab effects" data-group="primary" data-tab="effects">
-      {{> "systems/boilerplate/templates/item/parts/item-effects.hbs"}}
+      {{> "systems/riverbank/templates/item/parts/item-effects.hbs"}}
     </div>
   </section>
 

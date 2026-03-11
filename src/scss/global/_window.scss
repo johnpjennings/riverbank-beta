@@ -2,6 +2,107 @@
   font-family: $font-primary;
 }
 
+.dialog.riverbank-dialog,
+.window-app.riverbank-dialog,
+.window-app.dialog.riverbank-dialog {
+  .window-content {
+    background: #f3f2ef;
+    color: #1e2738;
+    border: 1px solid #4e648f;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .window-header {
+    border-bottom: 1px solid rgba(46, 71, 115, 0.25);
+  }
+
+  .window-title {
+    font-family: "IM Fell English SC", serif;
+    color: #2e4773;
+    letter-spacing: 0.03em;
+  }
+
+  .dialog-content {
+    margin-bottom: 10px;
+  }
+
+  .rb-choice-dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .rb-choice-dialog__prompt {
+    font-size: 13px;
+    color: #253958;
+  }
+
+  .rb-choice-dialog__options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .rb-choice-dialog__option {
+    border: 1px solid rgba(78, 100, 143, 0.55);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.82);
+    padding: 7px 8px;
+  }
+
+  .rb-choice-dialog__option-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2e4773;
+  }
+
+  .rb-choice-dialog__option-description {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #2b3443;
+    line-height: 1.3;
+  }
+
+  .rb-choice-dialog__option select,
+  .rb-choice-dialog__option input,
+  .rb-choice-dialog__option textarea {
+    width: 100%;
+    margin-top: 6px;
+    border: 1px solid #4e648f;
+    border-radius: 6px;
+    background: #fff;
+    color: #1e2738;
+    font-size: 13px;
+    min-height: 28px;
+    padding: 4px 8px;
+  }
+
+  .rb-choice-dialog__option select:focus,
+  .rb-choice-dialog__option input:focus,
+  .rb-choice-dialog__option textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(78, 100, 143, 0.2);
+  }
+
+  .dialog-buttons {
+    gap: 6px;
+  }
+
+  .dialog-buttons button {
+    border: 1px solid #4e648f;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #f7f5ef 0%, #e7e2d7 100%);
+    color: #1f2f4f;
+    font-size: 12px;
+  }
+
+  .dialog-buttons button:hover,
+  .dialog-buttons button:focus {
+    box-shadow: 0 0 0 2px rgba(78, 100, 143, 0.2);
+  }
+}
+
 .rollable {
   &:hover,
   &:focus {

@@ -1,0 +1,59 @@
+<section class="riverbank-sheet rb-target-number-app">
+  <section class="rb-target-number-grid">
+    <section class="rb-target-column">
+      {{#each leftSections as |section|}}
+      <section class="rb-panel rb-target-panel">
+        <h3>{{section.title}}</h3>
+        <div class="rb-target-options">
+          {{#each section.options as |option|}}
+          <label class="rb-target-option">
+            <input
+              type="radio"
+              name="{{section.key}}"
+              value="{{option.value}}"
+              {{#if @first}}checked{{/if}}
+            />
+            <span class="rb-target-option__label">{{option.label}}</span>
+            <span class="rb-target-option__value">
+              {{#if option.prefix}}{{option.prefix}}{{/if}}{{option.value}}
+            </span>
+          </label>
+          {{/each}}
+        </div>
+      </section>
+      {{/each}}
+    </section>
+
+    <section class="rb-target-column">
+      {{#each rightSections as |section|}}
+      <section class="rb-panel rb-target-panel">
+        <h3>{{section.title}}</h3>
+        <div class="rb-target-options">
+          {{#each section.options as |option|}}
+          <label class="rb-target-option">
+            <input
+              type="radio"
+              name="{{section.key}}"
+              value="{{option.value}}"
+              {{#if @first}}checked{{/if}}
+            />
+            <span class="rb-target-option__label">{{option.label}}</span>
+            <span class="rb-target-option__value">
+              {{#if option.prefix}}{{option.prefix}}{{/if}}{{option.value}}
+            </span>
+          </label>
+          {{/each}}
+        </div>
+      </section>
+      {{/each}}
+    </section>
+  </section>
+
+  <footer class="rb-target-footer">
+    <button type="button" class="rb-target-reset" data-action="reset">Reset</button>
+    <div class="rb-target-total">
+      <span class="rb-target-total__label">Target Number</span>
+      <span class="rb-target-total__value" data-target-number-total>0</span>
+    </div>
+  </footer>
+</section>

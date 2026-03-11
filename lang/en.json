@@ -1,22 +1,31 @@
 {
-  "BOILERPLATE": {
+  "RIVERBANK": {
     "Ability": {
-      "Str": { "long": "Strength", "abbr": "str" },
-      "Con": { "long": "Constitution", "abbr": "con" },
-      "Dex": { "long": "Dexterity", "abbr": "dex" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
-      "Wis": { "long": "Wisdom", "abbr": "wis" },
-      "Cha": { "long": "Charisma", "abbr": "cha" }
+      "Charm": { "long": "Charm", "abbr": "chr" },
+      "Intrepidity": { "long": "Intrepidity", "abbr": "int" },
+      "Pother": { "long": "Pother", "abbr": "pot" },
+      "Sense": { "long": "Sense", "abbr": "sns" }
     },
     "SheetLabels": {
-      "Actor": "Boilerplate Actor Sheet",
-      "Item": "Boilerplate Item Sheet"
+      "Actor": "Riverbank Actor Sheet",
+      "NPC": "Riverbank NPC Sheet",
+      "Item": "Riverbank Item Sheet"
     },
     "Item": {
       "Spell": {
         "SpellLVL": "Level {level} Spells",
         "AddLVL": "Add LVL {level}"
       }
+    },
+    "Feature": {
+      "Category": "Category",
+      "Uncategorized": "Uncategorized",
+      "CategoryInnate": "Innate Peculiarity",
+      "CategoryPersonal": "Personal Peculiarity",
+      "CategoryKnack": "Knack",
+      "CategoryInsufficiency": "Insufficiency",
+      "CategoryPet": "Pet",
+      "UsedThisCycle": "Used this cycle"
     },
     "Effect": {
       "Source": "Source",

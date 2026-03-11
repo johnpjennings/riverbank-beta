@@ -27,7 +27,7 @@ export class BoilerplateActor extends Actor {
    */
   prepareDerivedData() {
     const actorData = this;
-    const flags = actorData.flags.boilerplate || {};
+    const flags = actorData.flags.riverbank || {};
   }
 
   /**

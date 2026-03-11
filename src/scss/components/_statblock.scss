@@ -1,0 +1,642 @@
+.riverbank-sheet {
+  min-width: 960px;
+  min-height: 700px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.riverbank-statblock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.rb-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rb-panel {
+  border: 1px solid #4e648f;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.rb-panel h3 {
+  margin: -16px auto 6px;
+  width: max-content;
+  padding: 0 8px;
+  font-family: "IM Fell English SC", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  background: #f3f2ef;
+  letter-spacing: 0.03em;
+}
+
+.rb-row {
+  display: grid;
+  align-items: end;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.rb-top-row {
+  grid-template-columns: auto minmax(120px, 1fr) auto minmax(120px, 1fr);
+}
+
+.rb-meta-row {
+  grid-template-columns: auto 1fr auto 1fr auto 1fr;
+}
+
+.rb-subnote-row {
+  grid-template-columns: 58px 1fr;
+  margin-top: -4px;
+}
+
+.rb-row label,
+.rb-line-field label,
+.rb-compact-list label {
+  font-size: 12px;
+  color: #1e2738;
+}
+
+.rb-row input,
+.rb-line-field input,
+.rb-short-list input,
+.rb-insufficiency input,
+.rb-compact-list input {
+  border: 0;
+  border-bottom: 1px solid #636363;
+  border-radius: 0;
+  background: transparent;
+  height: 24px;
+  font-size: 13px;
+}
+
+.rb-subnote-row input {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.rb-animality-poetry {
+  padding-top: 10px;
+}
+
+.rb-ap-chart {
+  display: grid;
+  grid-template-columns: 16px 1fr 16px;
+  align-items: start;
+  gap: 6px;
+}
+
+.rb-ap-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-top: 16px;
+  --ap-pos-px: 50%;
+}
+
+.rb-ap-slider {
+  width: 100%;
+  margin: 0;
+  height: 22px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.rb-ap-slider:focus,
+.rb-ap-slider:focus-visible,
+.rb-ap-slider:hover,
+.rb-ap-slider:active {
+  outline: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.rb-ap-slider::-moz-focus-outer {
+  border: 0;
+}
+
+.rb-ap-slider::-webkit-slider-runnable-track,
+.rb-ap-slider:focus::-webkit-slider-runnable-track,
+.rb-ap-slider:active::-webkit-slider-runnable-track {
+  box-shadow: none !important;
+}
+
+.rb-ap-slider::-webkit-slider-thumb,
+.rb-ap-slider:focus::-webkit-slider-thumb,
+.rb-ap-slider:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9) !important;
+}
+
+.rb-ap-slider::-moz-range-track,
+.rb-ap-slider:focus::-moz-range-track,
+.rb-ap-slider:active::-moz-range-track {
+  box-shadow: none !important;
+}
+
+.rb-ap-slider::-moz-range-thumb,
+.rb-ap-slider:focus::-moz-range-thumb,
+.rb-ap-slider:active::-moz-range-thumb {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9) !important;
+}
+
+.rb-animality-poetry *:focus,
+.rb-animality-poetry *:focus-visible,
+.rb-animality-poetry *:active {
+  outline: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.rb-ap-slider::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 0;
+  background: #4e648f;
+  border: 0;
+}
+
+.rb-ap-slider::-moz-range-track {
+  height: 2px;
+  border-radius: 0;
+  background: #4e648f;
+  border: 0;
+}
+
+.rb-ap-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -6px;
+  border-radius: 50%;
+  border: 1px solid #18467c;
+  background: #2e73c0;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.rb-ap-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #18467c;
+  background: #2e73c0;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.rb-ap-edge {
+  text-align: left;
+}
+
+.rb-ap-edge-right {
+  text-align: right;
+}
+
+.rb-ap-side {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  color: #325f95;
+}
+
+.rb-ap-side-stack {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  margin-top: 10px;
+  color: #325f95;
+}
+
+.rb-ap-side-icon {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.rb-ap-ticks {
+  display: grid;
+  grid-template-columns: repeat(17, minmax(0, 1fr));
+  margin-top: -16px;
+  gap: 0;
+  pointer-events: none;
+}
+
+.rb-ap-tick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.rb-ap-current-penalties {
+  position: absolute;
+  top: 11px;
+  left: var(--ap-pos-px);
+  transform: translate(-50%, -82%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+  width: max-content;
+  pointer-events: none;
+}
+
+.rb-ap-current-penalties.is-active {
+  display: flex;
+}
+
+.rb-ap-tick i {
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: #4e648f;
+}
+
+.rb-ap-tick small {
+  font-size: 9px;
+  color: #2f4363;
+  line-height: 1;
+}
+
+.rb-ap-tick:nth-child(9) small {
+  font-weight: 700;
+}
+
+.rb-stat-table {
+  padding-top: 4px;
+}
+
+.rb-stat-header,
+.rb-stat-row {
+  display: grid;
+  grid-template-columns: minmax(82px, 1fr) 54px 16px 54px 16px 54px 16px 54px minmax(82px, 1fr);
+  gap: 6px;
+  align-items: center;
+}
+
+.rb-stat-header {
+  margin-bottom: 3px;
+}
+
+.rb-stat-header span {
+  text-align: center;
+  font-size: 11px;
+  color: #374964;
+}
+
+.rb-stat-row {
+  margin-bottom: 4px;
+}
+
+.rb-stat-row label,
+.rb-stat-row span {
+  text-align: right;
+  font-size: 13px;
+  color: #253958;
+}
+
+.rb-stat-row span {
+  text-align: left;
+}
+
+.rb-stat-row .rb-stat-op {
+  text-align: center;
+  font-size: 12px;
+  color: #2f4363;
+}
+
+.rb-stat-row input {
+  text-align: center;
+  height: 24px;
+}
+
+.rb-stat-roll-target {
+  cursor: pointer;
+}
+
+.rb-stat-row span.rb-stat-roll-target {
+  text-decoration: underline dotted transparent;
+  text-underline-offset: 2px;
+}
+
+.rb-stat-row span.rb-stat-roll-target:hover {
+  text-decoration-color: #2f4363;
+}
+
+.rb-npc-resource-panel .rb-stat-header,
+.rb-npc-resource-panel .rb-stat-row {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.rb-npc-resource-panel .rb-stat-row input,
+.rb-npc-resource-panel .rb-stat-header span {
+  text-align: center;
+}
+
+.rb-text-panel textarea,
+.rb-grow-field textarea {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  resize: none;
+  min-height: 90px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.rb-short-list input {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.rb-feature-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.rb-feature-drop-hint {
+  font-size: 11px;
+  font-style: italic;
+  color: #4d5f7d;
+}
+
+.rb-feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rb-feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.rb-feature-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.rb-feature-name {
+  font-size: 13px;
+  color: #1e2738;
+  min-width: 0;
+}
+
+button.rb-feature-name {
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+}
+
+.rb-feature-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.rb-feature-controls a {
+  color: #000;
+}
+
+.rb-knack-item .rb-feature-name,
+.rb-knack-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rb-feature-description {
+  display: none;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #2b3443;
+  text-align: left;
+  text-indent: 0;
+  white-space: pre-wrap;
+  padding: 0 0 2px;
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 4px;
+  }
+}
+
+.rb-feature-item.is-expanded .rb-feature-description {
+  display: block;
+}
+
+.rb-knacks {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.rb-knacks .rb-knacks-note {
+  font-size: 12px;
+  font-style: italic;
+  color: #2b3443;
+}
+
+.rb-knacks label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.rb-knacks input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+}
+
+.rb-relative .rb-meta-row:last-of-type {
+  grid-template-columns: auto 1fr auto 1fr;
+}
+
+.rb-compact-list {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px 8px;
+  align-items: end;
+  margin-bottom: 6px;
+}
+
+.rb-line-field {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: end;
+  margin-bottom: 5px;
+}
+
+.rb-grow-field {
+  margin-top: 6px;
+}
+
+.rb-grow-field label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.rb-family textarea,
+.rb-temp textarea {
+  min-height: 70px;
+}
+
+.riverbank-page-two {
+  border-top: 2px solid #9ba8be;
+  padding-top: 10px;
+}
+
+.rb-page-two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.rb-p2-home,
+.rb-p2-souvenirs {
+  min-height: 320px;
+}
+
+.rb-p2-seasonal,
+.rb-p2-notes {
+  min-height: 180px;
+}
+
+.rb-p2-pet,
+.rb-p2-vehicle {
+  min-height: 170px;
+}
+
+.rb-yes-no {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.rb-yes-no label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.rb-vehicle-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.rb-vehicle-types label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.rb-vehicle-types input[type="text"] {
+  min-width: 120px;
+  border: 0;
+  border-bottom: 1px solid #636363;
+  border-radius: 0;
+  background: transparent;
+  height: 24px;
+  font-size: 13px;
+}
+
+.rb-npc-statblock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+}
+
+.rb-npc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  min-height: 0;
+}
+
+.rb-npc-box {
+  min-height: 0;
+}
+
+.rb-npc-box--full {
+  grid-column: 1 / -1;
+}
+
+.rb-npc-name-panel input {
+  width: 100%;
+}
+
+.rb-npc-box textarea {
+  min-height: 120px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 4px;
+  white-space: pre-wrap;
+}
+
+.npc-sheet .window-content {
+  background: #fff;
+  overflow: auto;
+}
+
+@media (max-width: 980px) {
+  .riverbank-sheet {
+    min-width: 0;
+  }
+
+  .riverbank-statblock {
+    grid-template-columns: 1fr;
+  }
+
+  .rb-page-two-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rb-npc-grid {
+    grid-template-columns: 1fr;
+  }
+}

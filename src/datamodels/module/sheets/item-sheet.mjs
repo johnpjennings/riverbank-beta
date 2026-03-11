@@ -11,7 +11,7 @@ export class BoilerplateItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ['boilerplate', 'sheet', 'item'],
+      classes: ['riverbank', 'sheet', 'item'],
       width: 520,
       height: 480,
       tabs: [
@@ -26,7 +26,7 @@ export class BoilerplateItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = 'systems/boilerplate/templates/item';
+    const path = 'systems/riverbank/templates/item';
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.hbs`;
 
@@ -65,8 +65,8 @@ export class BoilerplateItemSheet extends ItemSheet {
     context.system = itemData.system;
     context.flags = itemData.flags;
 
-    // Adding a pointer to CONFIG.BOILERPLATE
-    context.config = CONFIG.BOILERPLATE;
+    // Adding a pointer to CONFIG.RIVERBANK
+    context.config = CONFIG.RIVERBANK;
 
     // Prepare active effects for easier access
     context.effects = prepareActiveEffectCategories(this.item.effects);

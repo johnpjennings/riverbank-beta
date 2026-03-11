@@ -1,0 +1,51 @@
+<section class="riverbank-sheet rb-haphazard-timer-app">
+  <section class="rb-panel rb-haphazard-timer-panel">
+    <h3>Haphazard Timer</h3>
+
+    <div class="rb-haphazard-timer-inputs">
+      <input
+        type="text"
+        name="displayTime"
+        class="rb-haphazard-timer-display{{#if isExpired}} is-expired{{/if}}"
+        data-haphazard-display
+        value="{{display}}"
+      />
+    </div>
+
+    <div class="rb-haphazard-timer-options">
+      <label class="rb-haphazard-timer-option">
+        <input type="checkbox" name="playChimeForGM" {{#if playChimeForGM}}checked{{/if}} />
+        <span>GM Chime</span>
+      </label>
+      <label class="rb-haphazard-timer-option">
+        <input type="checkbox" name="playChimeForPlayers" {{#if playChimeForPlayers}}checked{{/if}} />
+        <span>Player Chime</span>
+      </label>
+    </div>
+
+    <div class="rb-haphazard-timer-actions">
+      <button
+        type="button"
+        data-action="start-pause"
+        data-tooltip="{{#if isRunning}}Pause{{else}}Play{{/if}}"
+        aria-label="{{#if isRunning}}Pause{{else}}Play{{/if}}"
+        title="{{#if isRunning}}Pause{{else}}Play{{/if}}"
+      >
+        <i class="fa-solid {{#if isRunning}}fa-pause{{else}}fa-play{{/if}}"></i>
+      </button>
+      <button type="button" data-action="reset" data-tooltip="Reset" aria-label="Reset" title="Reset">
+        <i class="fa-solid fa-rotate-left"></i>
+      </button>
+      <button
+        type="button"
+        data-action="draw-haphazard-card"
+        class="rb-haphazard-timer-draw"
+        data-tooltip="Draw Haphazard Card"
+        aria-label="Draw Haphazard Card"
+        title="Draw Haphazard Card"
+      >
+        <i class="fa-solid fa-cards-blank"></i>
+      </button>
+    </div>
+  </section>
+</section>

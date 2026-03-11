@@ -18,7 +18,7 @@
   "bugs": "https://github.com/johnpjennings/riverbank-beta/issues",
   "changelog": "CHANGELOG.md",
   "manifest": "https://raw.githubusercontent.com/johnpjennings/riverbank-beta/main/manifest.json",
-  "download": "https://github.com/johnpjennings/riverbank-beta/archive/refs/heads/main.zip",
+  "download": "https://github.com/johnpjennings/riverbank-beta/releases/download/beta/main.zip",
   "media": [
     {
       "type": "setup",

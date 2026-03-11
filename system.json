@@ -98,6 +98,13 @@
       "system": "riverbank"
     },
     {
+      "name": "scenes",
+      "label": "Scenes",
+      "path": "packs/scenes",
+      "type": "Scene",
+      "system": "riverbank"
+    },
+    {
       "name": "adventure",
       "label": "Adventure",
       "path": "packs/adventure",
@@ -219,6 +226,14 @@
       "sorting": "a",
       "packs": [
         "locations"
+      ],
+      "folders": []
+    },
+    {
+      "name": "Scenes",
+      "sorting": "a",
+      "packs": [
+        "scenes"
       ],
       "folders": []
     },

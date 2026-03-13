@@ -3,6 +3,7 @@ import { BoilerplateActor } from './documents/actor.mjs';
 import { BoilerplateItem } from './documents/item.mjs';
 // Import sheet classes.
 import { BoilerplateActorSheet } from './sheets/actor-sheet.mjs';
+import { RiverbankLedgerActorSheet } from './sheets/actor-ledger-sheet.mjs';
 import { BoilerplateItemSheet } from './sheets/item-sheet.mjs';
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
@@ -62,8 +63,12 @@ Hooks.once('init', function () {
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet);
   Actors.registerSheet('riverbank', BoilerplateActorSheet, {
+    makeDefault: false,
+    label: 'RIVERBANK.SheetLabels.ActorClassic',
+  });
+  Actors.registerSheet('riverbank', RiverbankLedgerActorSheet, {
     makeDefault: true,
-    label: 'RIVERBANK.SheetLabels.Actor',
+    label: 'RIVERBANK.SheetLabels.ActorModern',
   });
   Items.unregisterSheet('core', ItemSheet);
   Items.registerSheet('riverbank', BoilerplateItemSheet, {

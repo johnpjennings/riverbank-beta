@@ -591,6 +591,40 @@
   grid-template-columns: 58px 1fr;
   margin-top: -4px;
 }
+.riverbank .rb-top-id--modern {
+  padding: 10px 12px;
+}
+.riverbank .rb-top-id-modern {
+  display: grid;
+  grid-template-columns: 125px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+.riverbank .rb-token-art {
+  width: 125px;
+}
+.riverbank .rb-token-art__image {
+  display: block;
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  border: 1px solid #4e648f;
+  border-radius: 10px;
+  background: #d9d9d9;
+  cursor: pointer;
+}
+.riverbank .rb-top-id-modern__fields {
+  min-width: 0;
+}
+.riverbank .rb-top-id-modern__fields .rb-row {
+  margin-bottom: 7px;
+}
+.riverbank .rb-meta-row--modern-id {
+  grid-template-columns: auto minmax(0, 1.3fr) auto minmax(70px, 0.85fr) auto minmax(56px, 0.75fr);
+}
+.riverbank .rb-meta-row--modern-id:last-child {
+  grid-template-columns: auto minmax(0, 1.2fr) auto minmax(0, 1fr);
+}
 .riverbank .rb-row label,
 .riverbank .rb-line-field label,
 .riverbank .rb-compact-list label {
@@ -1263,6 +1297,19 @@
   .riverbank .rb-npc-grid {
     grid-template-columns: 1fr;
   }
+  .riverbank .rb-top-id-modern {
+    grid-template-columns: 1fr;
+  }
+  .riverbank .rb-token-art {
+    width: 100%;
+  }
+  .riverbank .rb-token-art__image {
+    margin: 0 auto;
+  }
+  .riverbank .rb-meta-row--modern-id,
+  .riverbank .rb-meta-row--modern-id:last-child {
+    grid-template-columns: auto 1fr;
+  }
 }
 
 .riverbank-roll-shell {
@@ -1635,5 +1682,281 @@
   50% {
     background: rgba(162, 45, 45, 0.12);
     color: #6f1111;
+  }
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger {
+  gap: 18px;
+  padding: 16px;
+  background: radial-gradient(circle at top left, rgba(205, 183, 142, 0.22), transparent 28%), linear-gradient(180deg, #f7f1e3 0%, #efe4ce 100%);
+}
+
+.riverbank .riverbank-character-ledger .window-content {
+  background: linear-gradient(180deg, rgba(117, 77, 34, 0.08), rgba(117, 77, 34, 0.02)), #efe4ce;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .riverbank-statblock {
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 18px;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 58px;
+  gap: 18px;
+  align-items: stretch;
+  min-height: 0;
+  flex: 1 1 auto;
+  position: relative;
+  padding-right: 54px;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-body {
+  min-height: 0;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-body > .tab {
+  display: none;
+  height: 100%;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-body > .tab.active {
+  display: block;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-stats-tab .riverbank-statblock {
+  grid-template-columns: 1fr;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-page-grid--narrow {
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-page-grid > .rb-panel:first-child:nth-last-child(odd),
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-page-grid > .rb-panel:last-child:nth-child(odd) {
+  grid-column: 1/-1;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tabs {
+  position: absolute;
+  top: 24px;
+  right: -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 10px;
+  z-index: 2;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  min-height: 138px;
+  margin: 0;
+  border: 1px solid rgba(126, 92, 50, 0.48);
+  border-left: 0;
+  border-radius: 0 14px 14px 0;
+  background: linear-gradient(180deg, rgba(255, 251, 242, 0.98), rgba(232, 217, 189, 0.96));
+  color: #6a4b28;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  box-shadow: 0 8px 16px rgba(66, 43, 18, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  position: relative;
+  padding: 12px 0 10px;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab.active {
+  width: 52px;
+  background: linear-gradient(180deg, rgba(157, 115, 67, 0.96), rgba(126, 92, 50, 0.98));
+  color: #fff9ef;
+  border-color: #6a4b28;
+  box-shadow: 0 12px 20px rgba(66, 43, 18, 0.18), inset 0 1px 0 rgba(255, 250, 238, 0.25);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab:hover,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab:focus {
+  text-shadow: none;
+  box-shadow: 0 10px 20px rgba(66, 43, 18, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab::before {
+  content: "";
+  position: absolute;
+  inset: 8px auto 8px 0;
+  width: 3px;
+  border-radius: 999px;
+  background: rgba(106, 75, 40, 0.2);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab.active::before {
+  background: rgba(255, 249, 239, 0.72);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-column {
+  gap: 16px;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-panel {
+  border: 1px solid #7e5c32;
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, rgba(255, 252, 245, 0.95), rgba(246, 237, 220, 0.94));
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 10px 20px rgba(66, 43, 18, 0.08);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-panel h3 {
+  width: auto;
+  margin: -6px 0 10px;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6a4b28;
+  background: transparent;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-top-id {
+  background: linear-gradient(135deg, rgba(126, 92, 50, 0.1), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, rgba(255, 248, 236, 0.98), rgba(241, 231, 212, 0.96));
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-row label,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-line-field label,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-compact-list label,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-stat-header span,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-feature-drop-hint,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-knacks .rb-knacks-note {
+  color: #6c5336;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-row input,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-line-field input,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-short-list input,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-insufficiency input,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-compact-list input,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-vehicle-types input[type=text],
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-text-panel textarea,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-grow-field textarea {
+  border-bottom: 1px solid #8d6b42;
+  color: #2c2116;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-stat-table {
+  padding-top: 10px;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-stat-row {
+  padding: 6px 8px;
+  border-radius: 10px;
+  background: rgba(126, 92, 50, 0.07);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-stat-row label,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-stat-row span {
+  color: #523b21;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-stat-row input[readonly] {
+  border: 1px solid rgba(126, 92, 50, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 251, 243, 0.95);
+  font-weight: 700;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-feature-item {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(126, 92, 50, 0.06);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-feature-item.is-expanded {
+  background: rgba(126, 92, 50, 0.11);
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-feature-controls a,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-feature-name,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-side,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-side-stack,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-tick small,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-current-penalties,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-stat-op {
+  color: #6a4b28;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-slider::-webkit-slider-runnable-track,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-slider::-moz-range-track,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-tick i {
+  background: #8d6b42;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-slider::-webkit-slider-thumb,
+.riverbank .riverbank-sheet.riverbank-character-ledger .rb-ap-slider::-moz-range-thumb {
+  border-color: #6a4b28;
+  background: #9d7343;
+}
+
+.riverbank .riverbank-sheet.riverbank-character-ledger .riverbank-page-two {
+  border-top: 1px solid rgba(106, 75, 40, 0.35);
+  padding-top: 16px;
+}
+
+@media (max-width: 980px) {
+  .riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-shell {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+  }
+
+  .riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-page-grid,
+  .riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-page-grid--narrow {
+    grid-template-columns: 1fr;
+  }
+
+  .riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tabs {
+    position: static;
+    order: -1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-x: auto;
+  }
+
+  .riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab {
+    min-width: 0;
+    width: auto;
+    min-height: 0;
+    padding: 10px 14px;
+    writing-mode: initial;
+    transform: none;
+    border-left: 1px solid rgba(126, 92, 50, 0.48);
+    border-radius: 12px;
+  }
+
+  .riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab.active {
+    width: auto;
+  }
+
+  .riverbank .riverbank-sheet.riverbank-character-ledger .rb-modern-sheet-tab::before {
+    display: none;
+  }
+
+  .riverbank .riverbank-sheet.riverbank-character-ledger .riverbank-statblock {
+    grid-template-columns: 1fr;
   }
 }

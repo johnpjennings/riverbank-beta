@@ -1,0 +1,24 @@
+{
+  "id": "riverbank-compendium-world-importer",
+  "title": "Riverbank Compendium World Importer",
+  "description": "Imports compendium entries from a package into world documents while recreating the original folder tree under a root folder for each pack.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "OpenAI Codex"
+    }
+  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315"
+  },
+  "esmodules": [
+    "scripts/compendium-world-importer.mjs"
+  ],
+  "styles": [],
+  "languages": [],
+  "relationships": {
+    "systems": [],
+    "requires": []
+  }
+}

@@ -1,33 +1,74 @@
 <form class="{{cssClass}} {{actor.type}} riverbank-sheet" autocomplete="off">
   <section class="riverbank-statblock">
     <section class="rb-column rb-left">
-      <section class="rb-panel rb-top-id" data-sort-drop-zone="true">
-        <div class="rb-row rb-top-row">
-          <label>Name</label>
-          <input type="text" name="name" value="{{actor.name}}" />
-          <label>Player</label>
-          <input type="text" value="{{playerDisplay}}" readonly />
-        </div>
-        <div class="rb-row rb-subnote-row">
-          <span></span>
-          <input type="text" name="system.profile.titleOrHonorific" value="{{system.profile.titleOrHonorific}}" placeholder="title/honorific" />
-        </div>
-        <div class="rb-row rb-meta-row">
-          <label>Sort</label>
-          <input type="text" name="system.profile.sort" value="{{system.profile.sort}}" data-sort-drop-zone="true" />
-          <label>Pronouns</label>
-          <input type="text" name="system.profile.pronouns" value="{{system.profile.pronouns}}" />
-          <label>Size</label>
-          <input type="text" name="system.profile.size" value="{{system.profile.size}}" data-sort-drop-zone="true" />
-        </div>
-        <div class="rb-row rb-meta-row">
-          <label>Age</label>
-          <input type="text" name="system.profile.age" value="{{system.profile.age}}" />
-          <label>Best Time of the Day</label>
-          <input type="text" name="system.profile.bestTimeOfDay" value="{{system.profile.bestTimeOfDay}}" data-sort-drop-zone="true" />
-          <label>Sociability</label>
-          <input type="text" name="system.profile.sociability" value="{{system.profile.sociability}}" data-sort-drop-zone="true" />
-        </div>
+      <section class="rb-panel rb-top-id {{#if isModernSheet}}rb-top-id--modern{{/if}}" data-sort-drop-zone="true">
+        {{#if isModernSheet}}
+          <div class="rb-top-id-modern">
+            <div class="rb-token-art">
+              <img
+                class="rb-token-art__image"
+                src="{{actor.prototypeToken.texture.src}}"
+                data-edit="prototypeToken.texture.src"
+                title="{{actor.name}} Token"
+              />
+            </div>
+            <div class="rb-top-id-modern__fields">
+              <div class="rb-row rb-top-row">
+                <label>Name</label>
+                <input type="text" name="name" value="{{actor.name}}" />
+                <label>Player</label>
+                <input type="text" name="system.profile.player" value="{{system.profile.player}}" />
+              </div>
+              <div class="rb-row rb-meta-row rb-meta-row--modern-id">
+                <label>Title</label>
+                <input type="text" name="system.profile.titleOrHonorific" value="{{system.profile.titleOrHonorific}}" placeholder="title/honorific" />
+                <label>Pronouns</label>
+                <input type="text" name="system.profile.pronouns" value="{{system.profile.pronouns}}" />
+                <label>Age</label>
+                <input type="text" name="system.profile.age" value="{{system.profile.age}}" />
+              </div>
+              <div class="rb-row rb-meta-row rb-meta-row--modern-id">
+                <label>Sort</label>
+                <input type="text" name="system.profile.sort" value="{{system.profile.sort}}" data-sort-drop-zone="true" />
+                <label>Size</label>
+                <input type="text" name="system.profile.size" value="{{system.profile.size}}" data-sort-drop-zone="true" />
+              </div>
+              <div class="rb-row rb-meta-row rb-meta-row--modern-id">
+                <label>Best Time</label>
+                <input type="text" name="system.profile.bestTimeOfDay" value="{{system.profile.bestTimeOfDay}}" data-sort-drop-zone="true" />
+                <label>Sociability</label>
+                <input type="text" name="system.profile.sociability" value="{{system.profile.sociability}}" data-sort-drop-zone="true" />
+              </div>
+            </div>
+          </div>
+        {{else}}
+          <div class="rb-row rb-top-row">
+            <label>Name</label>
+            <input type="text" name="name" value="{{actor.name}}" />
+            <label>Player</label>
+            <input type="text" value="{{playerDisplay}}" readonly />
+          </div>
+          <div class="rb-row rb-subnote-row">
+            <span></span>
+            <input type="text" name="system.profile.titleOrHonorific" value="{{system.profile.titleOrHonorific}}" placeholder="title/honorific" />
+          </div>
+          <div class="rb-row rb-meta-row">
+            <label>Sort</label>
+            <input type="text" name="system.profile.sort" value="{{system.profile.sort}}" data-sort-drop-zone="true" />
+            <label>Pronouns</label>
+            <input type="text" name="system.profile.pronouns" value="{{system.profile.pronouns}}" />
+            <label>Size</label>
+            <input type="text" name="system.profile.size" value="{{system.profile.size}}" data-sort-drop-zone="true" />
+          </div>
+          <div class="rb-row rb-meta-row">
+            <label>Age</label>
+            <input type="text" name="system.profile.age" value="{{system.profile.age}}" />
+            <label>Best Time of the Day</label>
+            <input type="text" name="system.profile.bestTimeOfDay" value="{{system.profile.bestTimeOfDay}}" data-sort-drop-zone="true" />
+            <label>Sociability</label>
+            <input type="text" name="system.profile.sociability" value="{{system.profile.sociability}}" data-sort-drop-zone="true" />
+          </div>
+        {{/if}}
       </section>
 
       <section class="rb-panel rb-animality-poetry">

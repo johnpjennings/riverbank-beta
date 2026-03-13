@@ -1,6 +1,6 @@
 {
   "name": "riverbank",
-  "version": "2.0.0",
+  "version": "0.0.2",
   "description": "CSS compiler for the Riverbank system",
   "scripts": {
     "build": "sass src/scss/riverbank.scss css/riverbank.css --style=expanded --no-source-map",

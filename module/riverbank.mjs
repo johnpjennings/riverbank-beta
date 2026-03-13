@@ -3,6 +3,7 @@ import { BoilerplateActor } from './documents/actor.mjs';
 import { BoilerplateItem } from './documents/item.mjs';
 // Import sheet classes.
 import { BoilerplateActorSheet } from './sheets/actor-sheet.mjs';
+import { RiverbankLedgerActorSheet } from './sheets/actor-ledger-sheet.mjs';
 import { BoilerplateNPCSheet } from './sheets/npc-sheet.mjs';
 import { BoilerplateItemSheet } from './sheets/item-sheet.mjs';
 // Import helper/utility classes and constants.
@@ -87,8 +88,13 @@ Hooks.once('init', function () {
   Actors.unregisterSheet('core', ActorSheet);
   Actors.registerSheet('riverbank', BoilerplateActorSheet, {
     types: ['character'],
+    makeDefault: false,
+    label: 'RIVERBANK.SheetLabels.ActorClassic',
+  });
+  Actors.registerSheet('riverbank', RiverbankLedgerActorSheet, {
+    types: ['character'],
     makeDefault: true,
-    label: 'RIVERBANK.SheetLabels.Actor',
+    label: 'RIVERBANK.SheetLabels.ActorModern',
   });
   Actors.registerSheet('riverbank', BoilerplateNPCSheet, {
     types: ['npc'],

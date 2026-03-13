@@ -21,7 +21,7 @@ export class RiverbankHaphazardTimer extends Application {
       width: 225,
       height: 'auto',
       top: 70,
-      left: Math.max((window.innerWidth || 1400) - 288, 40),
+      left: 40,
       resizable: false,
       popOut: true,
       minimizable: true,
@@ -72,7 +72,7 @@ export class RiverbankHaphazardTimer extends Application {
   }
 
   _getHeaderButtons() {
-    return super._getHeaderButtons().filter((button) => button.class !== 'close');
+    return super._getHeaderButtons().filter((button) => !['close', 'minimize'].includes(button.class));
   }
 
   activateListeners(html) {
@@ -88,6 +88,8 @@ export class RiverbankHaphazardTimer extends Application {
   }
 
   async close(options = {}) {
+    if (options?.force) return super.close(options);
+    if (this.rendered && !this._minimized) return this.minimize();
     return this;
   }
 

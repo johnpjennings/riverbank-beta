@@ -7,7 +7,8 @@
       "Sense": { "long": "Sense", "abbr": "sns" }
     },
     "SheetLabels": {
-      "Actor": "Riverbank Actor Sheet",
+      "ActorClassic": "Riverbank Character Sheet (Classic)",
+      "ActorModern": "Riverbank Character Sheet (Modern)",
       "NPC": "Riverbank NPC Sheet",
       "Item": "Riverbank Item Sheet"
     },
